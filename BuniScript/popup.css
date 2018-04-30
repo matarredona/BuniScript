@@ -1,0 +1,38 @@
+#canvas {
+    background-color: #0000ff;
+    height: 65px;
+    width: 400px;
+    position:relative;
+}
+
+@font-face {
+    font-family: "EarlyGameBoy";
+    src: url("EarlyGameBoy.ttf");
+}
+
+.notification_text {
+    font-family: "EarlyGameBoy";
+	font-size: 20px;
+    color: white;
+}
+
+.username {
+    position:absolute;
+    bottom:5px;
+    right:1px;
+}
+
+.coins {
+    position: absolute;
+    bottom: 30px;
+    right: 27px;
+}
+
+.coinimage {
+    position: absolute;
+    background-image: url("coin.gif");
+    width: 25px;
+    height: 25px;
+    bottom: 32px;
+    right: 1px;
+}

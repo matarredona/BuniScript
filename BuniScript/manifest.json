@@ -1,0 +1,37 @@
+{
+    "manifest_version": 2,
+    "name": "buniscript",
+    "description": "This extension allows the user to animate a canvas capturing events from a chatroom",
+    "version": "1.0",
+    
+    "icons": {
+        "16": "buni16.png",
+        "48": "buni48.png",
+        "128": "buni128.png"
+    },
+    
+    "background": {
+        "scripts": ["popup.js"]
+    },
+    
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.amateur.tv/cam/amateur/*",
+                "https://*.chaturbate.com/*",
+                "https://chaturbate.com/*"
+            ],
+            "js": ["contentscript.js"]
+        }
+    ],
+
+    "browser_action": {
+        "default_icon": "buni48.png",
+        "default_title": "buniscript"
+    },
+
+    "permissions": [
+        "activeTab",
+        "storage"
+    ]
+}
